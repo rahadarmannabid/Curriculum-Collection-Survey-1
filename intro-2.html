@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Survey</title>
+    <style>
+        /* Container styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding: 20px 10px; /* Reduced left and right padding */
+            max-width: 95%;
+            margin: auto;
+        }
+
+        /* Chart container styles */
+        .chart-container {
+            max-width: 70%;
+            flex: 0 0 70%;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-right: 20px;
+            padding: 20px 10px; /* Reduced left and right padding */
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+
+        /* Form container styles */
+        .form-container {
+            flex: 1;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Input and button styles */
+        input[type=text] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        /* Plus button styles */
+        .plus-button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .plus-button:hover {
+            background-color: #286090;
+        }
+
+        /* Animation for form submission */
+        @keyframes submitAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .form-submitted {
+            animation: submitAnimation 0.3s ease;
+        }
+        
+        /* Align buttons on the same line */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="chart-container">
+          <!-- Embed YouTube video -->
+          <iframe width="100%" height="600" src="https://www.youtube.com/embed/D-zaKmcXm8w?si=yGZ7zxF0uiER04L2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="form-container">
+          <div class="button-container">
+              <button onclick="navigateToNextPage()">Next</button>
+              <button onclick="goBack()">Back</button> <!-- Back button -->
+          </div>
+      </div>
+  </div>
+
+  <script>
+      function navigateToNextPage() {
+          // Navigate to the next page (replace with your desired URL)
+          window.location.href = 'testpage-2.html';
+      }
+
+      function goBack() {
+          // Navigate to the previous page (replace with your desired URL)
+          window.location.href = 'testpage-1.html';
+      }
+  </script>
+</body>
+</html>
